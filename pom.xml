@@ -73,12 +73,17 @@
 							<goal>report</goal>
 							</goals>
 							<configuration>
-							<formats>
-								<format>XML</format>
-							</formats>
+								<formats>
+									<format>XML</format>
+								</formats>
 							</configuration>
 						</execution>
 					</executions>
+					<properties>
+						<sonar.coverage.jacoco.xmlReportPaths>
+							./coverage/lcov.info
+						</sonar.coverage.jacoco.xmlReportPaths>
+					</properties>
 				</plugin>
 			</plugins>
 		</build>
